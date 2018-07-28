@@ -1,0 +1,594 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   html, body{
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+   }
+   a{
+     text-decoration: none;
+     color: #777777;
+   }
+   a:hover{
+     color: #000;
+   }
+
+   #site{
+     background: #fafafa;
+   }
+
+   .csw{
+     width: 80%;
+     margin: 0 auto;
+     border: 0px solid  red;
+   }
+   #mainHeader{
+     background: #ffffff;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+     padding-bottom: 38px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 999;
+   }
+
+   .mainHeaderLeft{
+     float: left;
+   }
+   .mainHeaderRight{
+     float: right;
+   }
+   #maihLogo{
+     display: block;
+     margin-top: 25px;
+
+   }
+
+   #mainHeadermenu{
+     margin: 40px 0 0 0;
+     padding: 0;
+     list-style: none;
+   }
+   #mainHeadermenu li{
+     display: inline-block;
+     padding-left: 42px;
+   }
+   #mainHeadermenu li a{
+     font-weight:bold;
+     text-transform: uppercase;
+   }
+    #mainHeadermenu li a.selected{
+     color: #000000;
+    }
+
+    #headerPlaceholder{
+      height: 100px;
+}
+    #heroSlider{
+      background: #e2e2e2;
+      height: 350px;
+      margin-bottom: 70px;
+    }
+
+    .slider{
+      float: right;
+    }
+    .sliderText{
+      float: left;
+      margin-top: 110px;
+      margin-left: 120px;
+      margin-bottom: 123px;
+      text-transform: uppercase;
+      font-weight: lighter;
+    }
+    .sliderHead{
+      display: inline-block;
+      margin-bottom: 44px;
+      background: #000;
+    }
+
+    .sliderHead h2{
+      padding: 0px 31px 0px 36px;
+      margin: 0;
+      font-weight: lighter;
+      font-size: 3em;
+      color: #ffffff;
+    }
+    .sliderDesc{
+      font-size: 1.125em;
+      }
+
+    .projectFilters{
+      border-top: 1px solid #e1e1e1;
+      border-bottom: 1px solid #e1e1e1;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .projectFilters ul{
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .projectFilters ul li{
+      float: left;
+      position: relative;
+    }
+    .projectFilters ul::after{
+      display: block;
+      content: '';
+      clear: both;
+    }
+    .projectFilters ul li a{
+      display: block;
+      padding: 20px 22px 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+      transition: all .2s;
+    }
+    .projectFilters ul li a:hover{
+      transform: translateY(-5px);
+    }
+    .projectFilters ul li:after{
+      display: block;
+      content: '';
+      width: 1px;
+      height: 30px;
+      background: #dadada;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top:-12px;
+      transform: rotate(20deg);
+    }
+    .projectFilters ul li:last-child:after{
+      display: none;
+    }
+    .project-item{
+      float: left;
+      width: 32%;
+      margin-bottom:2%;
+    }
+    .project-item a{
+      display: block;
+    }
+    .project-item img{
+      width: 100%;
+    }
+    .gridSizer{
+      width: 33%;
+    }
+
+    .story{
+      margin-top: 72px;
+    }
+    .storyImage{
+      width: 46%;
+      height: 540px;
+      float: left;
+      background: url("../img/shutterstock_295137809.jpg") no-repeat;
+      background-size: cover;
+      background-origin: content-box;
+      align-content: center;
+    }
+    .articles{
+      float: right;
+      width: 48%;
+      }
+    .articles h4{
+      margin: 12px 0px;
+      text-transform: uppercase;
+      font-family: "Roboto Light";
+      font-size: 1.25em;
+      color: #000000;
+      letter-spacing: 0.75em;
+    }
+    .articles p{
+      font-size: 0.875em;
+      color: #777777;
+      line-height: 20px;
+    }
+    .slideBar h5{
+      margin: 20px 0;
+      font-weight: bold;
+      font-size: 1em;
+      color: #2f302f;
+    }
+    .teamHead{
+      width: 54%;
+      margin-left: 23%;
+      margin-right: 23%;
+    }
+    .teamHead h3 {
+      margin: 45px 0px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Roboto Light";
+      font-size: 1.875em;
+      color: #000000;
+      letter-spacing: 0.75em;
+    }
+    .teamHead p{
+      text-align: center;
+      font-size: 0.875em;
+      color: #777777;
+      line-height: 20px;
+    }
+    .member{
+      width: 32%;
+      margin-right: 2%;
+      float: left;
+    }
+    .member:nth-child(3n+1) {
+      clear: both;
+    }
+    .member:nth-child(3n){
+      margin-right: 0;
+    }
+    .member img{
+      display: block;
+      width: 100%;
+    }
+    .member h5{
+      margin: 0;
+      text-transform: uppercase;
+      font-family: "Roboto Light";
+      font-size: 1.5em;
+      color: #2b352d;
+    }
+    .member h6{
+      margin: 0;
+      margin-bottom: 24px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #777777;
+    }
+    .member p{
+      margin: 0;
+      font-size: 0.875em;
+      color: #777777;
+      line-height: 20px;
+    }
+    .memberDesc{
+      margin: 10%;
+    }
+
+
+
+    .beforeFooter{
+      margin-top: 220px;
+      }
+    #mainFooter{
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15);
+      background: #ffffff;
+    }
+    .footerLogo{
+      width: 80%;
+      padding-top: 60px;
+      padding-bottom: 45px;
+      margin: 0 auto;
+    }
+    .footerLogo img{
+      padding-left: 45%;
+   }
+    .socialMedias{
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb;
+      padding: 25px 0;
+      text-align: center;
+    }
+    .smLogo{
+      padding-left: 30px;
+    }
+    .fab:hover{
+      padding: 10px;
+      color: white;
+      border-radius:100px
+    }
+    #fb:hover{
+      background: #4775d2;
+    }
+    #gpl:hover{
+      background: #dd4e41;
+    }
+    #tw:hover{
+      background: #1da1f3;
+    }
+    #lin:hover{
+      background: #0077b4;
+    }
+    #dr:hover{
+      background: #ea4c89;
+    }
+    #pin:hover{
+      background: #cc2127;
+    }
+    #inst:hover{
+      background: #c5317e;
+    }
+
+    .footer p{
+      text-align: center;
+      line-height: 0;
+      margin: 0;
+      padding-top: 37px;
+      padding-bottom: 48px;
+      color: #9c9c9c;
+      font-size: 0.8125em;
+    }
+
+
+.asRange-selected {
+  margin-left: 4px;
+  margin-top: 4px;
+
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
